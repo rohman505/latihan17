@@ -5,51 +5,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>jQuery</title>
+  <title>jquery</title>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
   <!-- HTML -->
-  <h1>Bagaimana menggunakan jQuery?</h1>
-  <ol>
-    <li>menambahkan jQuery ke dokumen HTML</li>
-    <li>menggunakan jQuery selector dan action </li>
-  </ol>
   
-  <p>sintaks dasar jQuery adalah :
-  <code>$(selector).action()</code>
-  </p>
-  
-  <h2>contoh</h2>
-  
-  <p id="elemen1">menyembunyikan elemen HTML</p>
-  <p class="perlahan"sembunyi perlahan1</p>
-  <p class="perlahan"sembunyi perlahan2</p>
-  <button id="tombol1">sembunyi</button>
-  
-  <p id="elemen2class=""">mengubah isi elemen</p>
-               <button id="tombol2">ubah isi</button></button>
-              <script>
-  // memastikan dokumen html sudah siap
-    $(document).ready(function() {
-      // menyembunyikan paragraf 
-      $("#tombol1").click(function() {
-        $("#elemen1").hide()
-        $(".perlahan").fadeOut("slow")
-      })
-      
-      // mengubah isi paragraf
-                 $("#tombol2").click(function() {
-              $("#elemen2").html("diisi <b>hurup tebal</b>")
-      }) 
-    })
-  </script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
+  <h1>jquery</h1>
+  
+  <h2>Bagaimana menggunakan jQuery</h2>
+    <ol>
+    <li>menggunakan jQuery ke dokumen HTML</li>  
+    <li>menggunakan jQuery selector dan action</li>
+    </ol>
+    
+    <P>sinataks dadar jQuery adalah : 
+    <code>$(selector).action()</code>
+    </P>
+    
+    <h2>Contoh</h2>
+    
+    <p id="elemen1">menyembunyikan elemen HTML</p>
+    <p class="perlahan">sembunyi perlahan 1</p>
+    <p class="perlahan">sembunyi perlahan 2</p>
+    <button id="tombol1">sembunyi</button>
+    
+    <p id="elemen2">mengubah isi elemen</p>
+    <button id="tombol2">ubah isi</button>
+    
+    <script>
+    //memastikan document html sudah siap
+      $(document).ready(function() {
+    //menyembunyikan paragraf 
+   $("#tombol1").click(function() {
+     $("#elemen1").hide()
+     $(".perlahan").fadeOut("slow")
+   })
+   
+   //mengubah isi paragraf 
+   $("#tombol2").click(function() {
+    $("#elemen2").html("diisi <b>huruf tebal</b>")
+    $(".perlahan").fadeIn("800")
+   })
+      })
+    </script>
+    
   <!-- Project -->
   <script src="main.js"></script>
 </body>
