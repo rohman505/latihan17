@@ -22,6 +22,8 @@
   <h2>contoh</h2>
   
   <p id="elemen1">menyembunyikan elemen HTML</p>
+  <p class="perlahan"sembunyi perlahan1</p>
+  <p class="perlahan"sembunyi perlahan2</p>
   <button id="tombol1">sembunyi</button>
   
   <script>
@@ -30,6 +32,7 @@
       // menyembunyikan paragraf 
       $("#tombol1").click(function() {
         $("#elemen1").hide()
+        $(".perlahan").fadeOut("slow")
       })
     })
   </script>
